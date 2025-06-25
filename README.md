@@ -178,10 +178,6 @@ cd HideCookies
 - ✨ Manage hidden elements from popup
 - ✨ Support for dynamic content
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## ⭐ Show Your Support
 
 If HideCookies helped you browse the web more peacefully, please:
@@ -189,14 +185,6 @@ If HideCookies helped you browse the web more peacefully, please:
 - 🐛 **Report any issues** you encounter
 - 💡 **Suggest new features**
 - 🔄 **Share with friends** who hate cookie banners too!
-
-## 📞 Support
-
-- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/yourusername/HideCookies/issues)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/yourusername/HideCookies/discussions)
-- 📧 **Email**: your-email@example.com
-
----
 
 **Made with ❤️ for a cleaner web browsing experience**
 
