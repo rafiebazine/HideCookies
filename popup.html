@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            width: 350px;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            margin: 0 0 20px 0;
+            color: #333;
+            text-align: center;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #4CAF50;
+        }
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        button {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .hide-btn {
+            background: #f44336;
+            color: white;
+        }
+        .hide-btn:hover {
+            background: #da190b;
+        }
+        .show-btn {
+            background: #4CAF50;
+            color: white;
+        }
+        .show-btn:hover {
+            background: #45a049;
+        }
+        .clear-btn {
+            background: #ff9800;
+            color: white;
+        }
+        .clear-btn:hover {
+            background: #e68900;
+        }
+        .hidden-list {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 4px;
+            border-left: 4px solid #4CAF50;
+        }
+        .hidden-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .hidden-item:last-child {
+            border-bottom: none;
+        }
+        .remove-btn {
+            background: #f44336;
+            color: white;
+            border: none;
+            padding: 4px 8px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        .remove-btn:hover {
+            background: #da190b;
+        }
+        .current-url {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 15px;
+            padding: 8px;
+            background: #e8f5e8;
+            border-radius: 4px;
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>🙈 Div Hider</h2>
+        <div id="currentUrl" class="current-url"></div>
+        
+        <div class="input-group">
+            <label for="selector">Class name or ID:</label>
+            <input type="text" id="selector" placeholder="Enter .className or #idName">
+        </div>
+        
+        <div class="button-group">
+            <button id="hideBtn" class="hide-btn">Hide Div</button>
+            <button id="showAllBtn" class="show-btn">Show All</button>
+            <button id="clearBtn" class="clear-btn">Clear List</button>
+        </div>
+        
+        <div id="hiddenList" class="hidden-list" style="display: none;">
+            <h3>Hidden Elements:</h3>
+            <div id="hiddenItems"></div>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

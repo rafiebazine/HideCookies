@@ -1,0 +1,14 @@
+/* CSS file for additional styling if needed */
+/* The main hiding is done via JavaScript for better control */
+
+/* Ensure hidden elements stay hidden even with dynamic CSS changes */
+[data-div-hider-hidden="true"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+    overflow: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
